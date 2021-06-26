@@ -11,8 +11,7 @@ export class SidebarContentComponent implements OnInit {
   navItems = [
     { label: 'About me', route: '/about'},
     { label: 'Work Experience', route: '/work'},
-    { label: 'Education', route: '/edu'},
-    { label: 'Skills', route: '/skill'},
+    { label: 'Work Examples', route: '/examples'},
     { label: 'Contact me', route: '/contact'}
   ];
 
