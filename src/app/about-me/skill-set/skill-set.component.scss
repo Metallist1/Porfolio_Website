@@ -1,0 +1,64 @@
+.team-skills{
+  display: flex;
+  flex-flow: row;
+  font-size: 24px;
+  margin: 6rem 0;
+}
+.team-skill-container{
+  margin: 0 6rem;
+}
+.team-skill-header{
+  text-align: center;
+  font-weight: bold;
+}
+
+.team-skill-content{
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-skills{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.main-skill-container{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.main-skill-content{
+  width: 100%;
+  margin: 0 25px;
+}
+
+.main-skill-header{
+  width: 25%;
+}
+
+.skills{
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+}
+
+.tools{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 6rem;
+}
+
+.tool-header{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.tool-content{
+  font-size: 18px;
+}

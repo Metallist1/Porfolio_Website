@@ -10,6 +10,8 @@ import { EducationComponent } from './about-me/education/education.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { WorkExamplesComponent } from './work-examples/work-examples.component';
 import { NewNavComponent } from './new-nav/new-nav.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { IntroPageComponent } from './intro-page/intro-page.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { NewNavComponent } from './new-nav/new-nav.component';
     EducationComponent,
     ContactMeComponent,
     WorkExamplesComponent,
-    NewNavComponent
+    NewNavComponent,
+    IntroPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
