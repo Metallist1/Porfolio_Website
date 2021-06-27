@@ -1,6 +1,7 @@
 nav{
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  z-index: 100;
 }
 
 .nav-link.active {
