@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -8,10 +8,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { SkillSetComponent } from './about-me/skill-set/skill-set.component';
 import { EducationComponent } from './about-me/education/education.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import { SidebarContentComponent } from './nav/sidebar-content/sidebar-content.component';
-import { SidebarHeaderComponent } from './nav/sidebar-header/sidebar-header.component';
-import { HeaderComponent } from './nav/header/header.component';
 import { WorkExamplesComponent } from './work-examples/work-examples.component';
+import { NewNavComponent } from './new-nav/new-nav.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +19,13 @@ import { WorkExamplesComponent } from './work-examples/work-examples.component';
     SkillSetComponent,
     EducationComponent,
     ContactMeComponent,
-    SidebarContentComponent,
-    SidebarHeaderComponent,
-    HeaderComponent,
-    WorkExamplesComponent
+    WorkExamplesComponent,
+    NewNavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

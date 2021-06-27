@@ -1,15 +1,10 @@
-<app-sidebar-header
-  [sidenavTemplateRef]="navContent"
-  [direction]="'left'"
-  [navWidth]="280"
-  [duration]="0.5"></app-sidebar-header>
-<div class="main-container">
-  <app-header></app-header>
-  <section>
-    <router-outlet></router-outlet>
-  </section>
-</div>
-
-<ng-template #navContent>
-  <app-sidebar-content></app-sidebar-content>
-</ng-template>
+<header>
+  <app-new-nav></app-new-nav>
+</header>
+<main>
+  <div class="main-container">
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+</main>

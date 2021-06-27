@@ -1,0 +1,53 @@
+<nav class="navbar">
+  <ul class="navbar-nav">
+    <li class="logo">
+      <a
+        [routerLink]="['']"
+        class="nav-link">
+        <span class="link-text logo-text">Portfolio</span>
+        <fa-icon [icon]="faAngleDoubleRight" size="2x"></fa-icon>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/about']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon class="fa-user" [icon]="faUser" [ngClass]="{'active': isActive}" size="2x"></fa-icon>
+        <span class="link-text">About me</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/work']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faBriefcase" size="2x" ></fa-icon>
+        <span class="link-text">Work Experience</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/examples']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faDesktop" size="2x"></fa-icon>
+        <span class="link-text">Work Examples</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/contact']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faEnvelope" size="2x"></fa-icon>
+        <span class="link-text">Contact me</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>

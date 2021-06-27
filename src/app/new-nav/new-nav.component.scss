@@ -1,0 +1,8 @@
+nav{
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.nav-link.active {
+  color: #2963D3 !important
+}
