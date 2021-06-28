@@ -12,6 +12,7 @@ import { WorkExamplesComponent } from './work-examples/work-examples.component';
 import { NewNavComponent } from './new-nav/new-nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IntroPageComponent } from './intro-page/intro-page.component';
+import {NgParticlesModule} from "ng-particles";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { IntroPageComponent } from './intro-page/intro-page.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,21 @@
-<div class="about-me-contents">
-  <p>Hello. I am Nedas. A part time experimenter, a part time problem solver and a full time Software Developer</p>
-  <p>I am an extremely passionated in building good products that would improve the lives of other people.</p>
-  <p>This allows me to experiment with different kinds of solutions in order to find the best possible answer to any problem.</p>
-  <p>A solution might require different languages, different methodologies and different view points.</p>
-  <p>However, unfortunately for the problem I am really patient and willing to spend time on solving it.</p>
+<ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)">
+</ng-particles>
+<div class="about-me-container">
+  <div class="about-me-contents">
+    <div class="about-me-sentence">Hello. I am
+      <span style="color: #2963D3;">Nedas</span>
+      . A part time experimenter, a part time problem solver and a full time Software Developer.
+    </div>
+    <div class="about-me-sentence">
+      I am an extremely passionated in building good products that would improve the lives of other people.
+    </div>
+    <div class="about-me-sentence">
+      I invite you to check out my abilities, my work experience and my portfolio.
+    </div>
+  </div>
+  <div class="button-redirects">
+    <button type="button" [routerLink]="['/about']" class="btn white-border">Abilities</button>
+    <button type="button" [routerLink]="['/examples']" class="btn white-border">Work Examples</button>
+    <button type="button" [routerLink]="['/work']" class="btn white-border">Work Experience</button>
+  </div>
 </div>

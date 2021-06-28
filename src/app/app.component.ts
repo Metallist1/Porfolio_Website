@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Container, Main} from "ng-particles";
 
 @Component({
   selector: 'app-root',
