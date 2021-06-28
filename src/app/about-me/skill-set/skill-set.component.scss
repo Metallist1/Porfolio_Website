@@ -5,7 +5,14 @@
   margin: 6rem 0;
 }
 .team-skill-container{
-  margin: 0 6rem;
+  box-shadow: 0 3px 7px -1px rgb(0 0 0 / 10%);
+  margin: 0 6rem 1.6% 6rem;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  padding: 25px;
 }
 .team-skill-header{
   text-align: center;
@@ -28,6 +35,7 @@
   display: flex;
   flex-flow: row;
   align-items: center;
+
 }
 
 .main-skill-content{
@@ -43,6 +51,14 @@
   width: 35%;
   display: flex;
   flex-flow: column;
+  box-shadow: 0 3px 7px -1px rgb(0 0 0 / 10%);
+  margin: 0 6rem 1.6% 6rem;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  padding: 25px;
 }
 
 .tools{
@@ -52,6 +68,7 @@
   flex-flow: row;
   justify-content: space-around;
   margin-top: 6rem;
+
 }
 
 .tool-header{
@@ -61,4 +78,41 @@
 
 .tool-content{
   font-size: 18px;
+}
+
+.tool-container{
+  box-shadow: 0 3px 7px -1px rgb(0 0 0 / 10%);
+  margin: 0 6rem 1.6% 6rem;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .tools{
+    flex-flow: column;
+  }
+  .tool-container{
+    margin: 2rem 0;
+  }
+
+  .team-skills{
+    flex-flow: column;
+  }
+
+  .team-skill-container{
+    margin: 2rem 0;
+  }
+
+  .skills{
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .main-skill-content{
+    margin: 0;
+  }
 }

@@ -19,10 +19,9 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
-
 body {
   color: black;
-  background-color: white;
+  background-color: rgba(232, 232, 232, 1);
   margin: 0;
   padding: 0;
 }
@@ -147,6 +146,7 @@ main {
 
   .navbar-nav {
     flex-direction: row;
+    width: 100%;
   }
 
   .nav-link {
@@ -220,4 +220,15 @@ main {
 
 .solar #solarIcon {
   display: block;
+}
+
+.wrapper{
+  margin-top: 3rem;
+}
+.section-title{
+  text-align: center;
+  font-size: 36px;
+  border-bottom: solid;
+  border-width: 3px;
+  font-weight: bold;
 }
