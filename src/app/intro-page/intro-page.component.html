@@ -7,15 +7,31 @@
       . A part time experimenter, a part time problem solver and a full time Software Developer.
     </div>
     <div class="about-me-sentence">
-      I am extremely passionate in building good products that would improve the lives of other people.
+      I am extremely passionate in building high quality products that would improve the lives of other people.
     </div>
     <div class="about-me-sentence">
       I invite you to check out my abilities, my work experience and my portfolio.
     </div>
   </div>
   <div class="button-redirects">
-    <button type="button" [routerLink]="['/about']" class="btn white-border">Abilities</button>
-    <button type="button" [routerLink]="['/work']" class="btn white-border">Experience</button>
-    <button type="button" [routerLink]="['/examples']" class="btn white-border">Examples</button>
+    <button type="button" [routerLink]="['/about']" class="btn white-border">
+      <fa-icon class="fa-user" [icon]="faUser"></fa-icon>
+      Abilities
+    </button>
+    <button type="button" [routerLink]="['/work']"  class="btn white-border">
+      <fa-icon [icon]="faBriefcase" >
+
+      </fa-icon>
+      Experience
+    </button>
+    <button type="button" [routerLink]="['/examples']" class="btn white-border">
+      <fa-icon [icon]="faDesktop" ></fa-icon>
+      Examples
+    </button>
+
+    <button type="button" [routerLink]="['/contact']" class="btn white-border">
+      <fa-icon [icon]="faEnvelope" ></fa-icon>
+      Contact
+    </button>
   </div>
 </div>

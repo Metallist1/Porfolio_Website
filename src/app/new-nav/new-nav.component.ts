@@ -14,7 +14,7 @@ export class NewNavComponent implements OnInit {
   faAngleDoubleRight = faAngleDoubleRight;
   faHome = faHome;
 
-  isActive = true;
+  size = '2x';
 
   constructor() { }
 

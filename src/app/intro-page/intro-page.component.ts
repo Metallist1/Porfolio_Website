@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Container, Main} from "ng-particles";
+import { faUser, faBriefcase, faDesktop, faEnvelope, faAngleDoubleRight, faHome } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-intro-page',
   templateUrl: './intro-page.component.html',
@@ -12,6 +14,12 @@ export class IntroPageComponent implements OnInit {
   ngOnInit() {
 
   }
+  faUser = faUser;
+  faBriefcase = faBriefcase;
+  faDesktop = faDesktop;
+  faEnvelope = faEnvelope;
+  faAngleDoubleRight = faAngleDoubleRight;
+  faHome = faHome;
 
   id = "tsparticles";
 
