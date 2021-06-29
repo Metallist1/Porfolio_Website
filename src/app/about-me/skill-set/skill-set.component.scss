@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row;
   font-size: 24px;
-  margin: 6rem 0;
+  margin: 2rem 0;
 }
 .team-skill-container{
   box-shadow: 0 3px 7px -1px rgb(0 0 0 / 10%);
@@ -90,8 +90,20 @@
   z-index: 0;
   padding: 25px;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1800px) {
+  .team-skill-container{
+    margin: 0 2rem 1.6% 2rem;
+  }
+  .skills{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .team-skill-container {
+    margin: 0 0.5rem 1.6% 0;
+  }
+}
+@media only screen and (max-width: 768px) {
 
   .tools{
     flex-flow: column;

@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "nedasportfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,8 +10,8 @@
     "e2e": "ng e2e",
     "start:dev": "ng serve --open -c dev",
     "start:prod": "ng serve --open -c production",
-    "deploy": "ng build --aot && firebase deploy --only hosting --project=portfolio",
-    "deploy:prod": "ng build -c production && firebase deploy --only hosting --project=portfolio"
+    "deploy": "ng build --aot && firebase deploy --only hosting --project=nedasportfolio",
+    "deploy:prod": "ng build -c production && firebase deploy --only hosting --project=nedasportfolio"
   },
   "private": true,
   "dependencies": {
