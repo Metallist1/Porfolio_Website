@@ -38,3 +38,11 @@
   border-radius: 5px;
   margin: 0 1rem;
 }
+@media only screen and (max-width: 600px) {
+  .button-redirects {
+    flex-flow: column;
+  }
+  .white-border {
+    margin: 2rem 0;
+  }
+}

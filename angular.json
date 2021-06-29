@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "nedasportfolio",
   "projects": {
     "ratoong": {
       "projectType": "application",
@@ -60,7 +60,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "index": { 
+              "index": {
                 "input": "src/index.prod.html",
                 "output": "index.html"
               },
@@ -90,18 +90,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ratoong:build"
+            "browserTarget": "nedasportfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ratoong:build:production"
+              "browserTarget": "nedasportfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ratoong:build"
+            "browserTarget": "nedasportfolio:build"
           }
         },
         "test": {
@@ -131,11 +131,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ratoong:serve"
+            "devServerTarget": "portfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ratoong:serve:production"
+              "devServerTarget": "portfolio:serve:production"
             }
           }
         },
@@ -146,7 +146,7 @@
       }
     }
   },
-  "defaultProject": "ratoong",
+  "defaultProject": "nedasportfolio",
   "cli": {
     "analytics": false
   }
