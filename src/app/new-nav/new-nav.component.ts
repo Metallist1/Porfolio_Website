@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser, faBriefcase, faDesktop, faEnvelope, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBriefcase, faDesktop, faEnvelope, faAngleDoubleRight, faRocket } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-new-nav',
   templateUrl: './new-nav.component.html',
@@ -12,6 +12,7 @@ export class NewNavComponent implements OnInit {
   faDesktop = faDesktop;
   faEnvelope = faEnvelope;
   faAngleDoubleRight = faAngleDoubleRight;
+  faRocket = faRocket;
 
   isActive = true;
 
