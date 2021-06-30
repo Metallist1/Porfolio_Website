@@ -17,9 +17,9 @@ export class AppComponent {
       "color": {
         "value": "#232741"
       },
-      "position": "0 50%",
+      "position": "50% 50%",
       "repeat": "no-repeat",
-      "size": "60%"
+      "size": "20%"
     },
     "fullScreen": {
       "enable": true,
@@ -32,18 +32,22 @@ export class AppComponent {
           "mode": "repulse"
         },
         "onHover": {
-          "mode": "grab"
+          "enable": true,
+          "mode": "bubble"
         }
       },
       "modes": {
         "bubble": {
-          "distance": 400,
+          "distance": 250,
           "duration": 2,
-          "opacity": 8,
-          "size": 40
+          "opacity": 0,
+          "size": 0
         },
         "grab": {
-          "distance": 200
+          "distance": 400
+        },
+        "repulse": {
+          "distance": 400
         }
       }
     },
@@ -62,10 +66,9 @@ export class AppComponent {
         "attract": {
           "rotate": {
             "x": 600,
-            "y": 1200
+            "y": 600
           }
         },
-        "direction": "left",
         "enable": true,
         "outModes": {
           "bottom": "out",
@@ -73,23 +76,27 @@ export class AppComponent {
           "right": "out",
           "top": "out"
         },
-        "speed": 1,
-        "straight": true
+        "random": true,
+        "speed": 1
+      },
+      "number": {
+        "density": {
+          "enable": true
+        },
+        "value": 160
       },
       "opacity": {
-        "value": 0.5,
-        "animation": {
-          "speed": 1,
-          "minimumValue": 0.1
-        }
-      },
-      "shape": {
-        "options": {
-          "star": {
-            "sides": 5
-          }
+        "random": {
+          "enable": true
         },
-        "type": "star"
+        "value": {
+          "min": 0,
+          "max": 1
+        },
+        "animation": {
+          "enable": true,
+          "speed": 1
+        }
       },
       "size": {
         "random": {
@@ -97,11 +104,11 @@ export class AppComponent {
         },
         "value": {
           "min": 1,
-          "max": 4
+          "max": 3
         },
         "animation": {
-          "speed": 40,
-          "minimumValue": 0.1
+          "speed": 4,
+          "minimumValue": 0.3
         }
       }
     }
