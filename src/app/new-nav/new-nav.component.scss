@@ -12,3 +12,9 @@ nav{
   padding: 0 !important;
   display: block !important;
 }
+
+@media only screen and (max-height: 550px) {
+  nav{
+    overflow-y: visible; /* UnHide vertical scrollbar */
+  }
+}
