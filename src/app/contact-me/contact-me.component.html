@@ -1,39 +1,98 @@
 <div class="wrapper">
   <div class="section-title">
-    CONTACT
+    CONTACT ME
   </div>
   <div class="flex-container">
     <div class="contact-container">
-      <div class="contact-content"> I am always looking for new exciting ideas and opportunities. Contact me. </div>
-      <div class="contact-item emphasis">Email:
-        <a href="mailto:nedassurkus@gmail.com"
-        target="new"
-        title="instagram"
-        class="white grey-hover mr-3">nedassurkus@gmail.com</a>
+
+      <div>
+        <form [formGroup]="emailDetails" (ngSubmit)="sendEmail()" novalidate>
+          <div class="field">
+            <div class="question-title">
+              <div>
+                Email:
+              </div>
+              <ul *ngIf="f.email.errors && (f.email.dirty || f.email.touched || error)">
+                <li *ngIf="f.email.errors?.minlength" class="error-text shake-horizontal">  Email must be at least 5 characters</li>
+                <li *ngIf="f.email.errors?.maxlength" class="error-text shake-horizontal">  Email must be no more than 100 characters</li>
+                <li *ngIf="f.email.errors?.required" class="error-text shake-horizontal">  Email is required </li>
+                <li *ngIf="f.email.errors?.email && ! (f.email.errors?.required || f.email.errors?.minlength || f.email.errors?.maxlength)" class="error-text shake-horizontal">  A valid email is required </li>
+              </ul>
+            </div>
+            <input type="email" name="email" ngModel [email]="true" class="form-control"
+                   [ngClass]="{'error': f.email.errors && (f.email.dirty || f.email.touched || error), 'shake-horizontal':  f.email.errors && error }" placeholder="Type your email here" formControlName="email" />
+          </div>
+          <div class="field">
+            <div class="question-title">
+              <div>
+                Title:
+              </div>
+              <ul *ngIf="f.title.errors && (f.title.dirty || f.title.touched || error)">
+                <li *ngIf="f.title.errors.minlength" class="error-text shake-horizontal">  Title must be at least 5 characters</li>
+                <li *ngIf="f.title.errors.maxlength" class="error-text shake-horizontal">  Title must be no more than 20 characters</li>
+                <li *ngIf="f.title.errors.required" class="error-text shake-horizontal">  Title is required </li>
+              </ul>
+            </div>
+            <input type="text" name="title" class="form-control"
+                   [ngClass]="{'error': f.title.errors && (f.title.dirty || f.title.touched || error), 'shake-horizontal':  f.title.errors && error }" placeholder="Your title goes here" formControlName="title" />
+          </div>
+          <div class="field">
+            <div class="question-title">
+              <div>
+                Message:
+              </div>
+              <ul *ngIf="f.contents.errors && (f.contents.dirty || f.contents.touched || error)">
+                <li *ngIf="f.contents.errors.minlength" class="error-text shake-horizontal">  Text must be at least 5 characters</li>
+                <li *ngIf="f.contents.errors.maxlength" class="error-text shake-horizontal">  Text must be no more than 200 characters</li>
+                <li *ngIf="f.contents.errors.required" class="error-text shake-horizontal">  Text is required </li>
+              </ul>
+            </div>
+            <textarea class="form-control" [ngClass]="{'error': f.contents.errors && (f.contents.dirty || f.contents.touched || error), 'shake-horizontal':  f.contents.errors && error }" name="contents" placeholder="Type your clever message here" formControlName="contents" rows="3"></textarea>
+          </div>
+          <div class="submit-center">
+            <input type="submit" *ngIf="!submitted || error"
+                   [disabled]="this.isDisabled"
+                   class="btn submit-button button-on-hover" [ngClass]="{'button-change-color': loading === true }" value="Send an email">
+            <ul class="special-case" *ngIf="!f.email.errors && !f.contents.errors && !f.title.errors && backendError">
+              <li class="error-text shake-horizontal backendError">Unable to reach the backend</li>
+            </ul>
+            <div *ngIf="submitted && !error"> Thank you for contacting me. I will respond as soon as I can !</div>
+          </div>
+        </form>
       </div>
-      <div class="contact-content">OR</div>
-      <div class="social-media">
-        <a class="btn btn-block btn-social btn-linkedin"
-           href="https://www.facebook.com/nedas.surkus"
-           target="new"
-           title="instagram">
-          <fa-icon [icon]="faFacebookF"></fa-icon>
-          Check me out on Facebook
-        </a>
-        <a class="btn btn-block btn-social btn-linkedin"
-           href="https://www.linkedin.com/in/neda0147/"
-           target="new"
-           title="instagram">
-          <fa-icon [icon]="faLinkedin"></fa-icon>
-          Check me out on LinkedIn
-        </a>
-        <a class="btn btn-block btn-social btn-github"
-           href="https://github.com/Metallist1"
-           target="new"
-           title="instagram">
-          <fa-icon [icon]="faGithub"></fa-icon>
-          Check me out on Github
-        </a>
+      <div class="signature-flex">
+        <div class="siganture-title">
+          Social Media
+        </div>
+        <div class="signature-container">
+          <a
+            href="https://www.facebook.com/nedas.surkus"
+            target="new"
+            title="Facebook"
+            class="icon-style facebook"
+            [ngClass]="{'facebook-icon-change-color': loading === true }"
+          >
+            <fa-icon size="3x" [icon]="faFacebook"></fa-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/neda0147/"
+            target="new"
+            title="LinkedIn"
+            class="icon-style linkedIn"
+            [ngClass]="{'linkedIn-icon-change-color': loading === true }"
+          >
+            <fa-icon size="3x" [icon]="faLinkedin"></fa-icon>
+          </a>
+          <a
+            href="https://github.com/Metallist1"
+            target="new"
+            title="Github"
+            class="icon-style github"
+            [ngClass]="{'github-icon-change-color': loading === true }"
+          >
+            <fa-icon size="3x" [icon]="faGithub"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
   </div>

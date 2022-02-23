@@ -13,7 +13,8 @@ import { NewNavComponent } from './new-nav/new-nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IntroPageComponent } from './intro-page/intro-page.component';
 import {NgParticlesModule} from "ng-particles";
-
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +27,15 @@ import {NgParticlesModule} from "ng-particles";
     NewNavComponent,
     IntroPageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    NgbModule,
-    NgParticlesModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+         HttpClientModule,
+        NgbModule,
+        NgParticlesModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

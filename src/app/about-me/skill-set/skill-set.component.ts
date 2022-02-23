@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {interval} from "rxjs";
+import {AnimationService} from "../../shared/animation.service";
 
 @Component({
   selector: 'app-skill-set',
@@ -9,7 +10,7 @@ import {interval} from "rxjs";
 export class SkillSetComponent implements OnInit {
 
   htmlValue = 0;
-  trueHTMLValue = 75;
+  trueHTMLValue = 70;
 
   CSSValue = 0;
   trueCSSValue = 70;
@@ -18,16 +19,16 @@ export class SkillSetComponent implements OnInit {
   trueJSValue = 70;
 
   AngularValue = 0;
-  trueAngularValue = 80;
+  trueAngularValue = 75;
 
   JavaValue = 0;
   trueJavaValue = 80;
 
   CValue = 0;
-  trueCValue = 75;
+  trueCValue = 80;
 
   NodeValue = 0;
-  trueNodeValue = 60;
+  trueNodeValue = 85;
 
   SQLValue = 0;
   trueSQLValue = 90;
@@ -37,7 +38,7 @@ export class SkillSetComponent implements OnInit {
 
   curSec = 0;
 
-  constructor() {
+  constructor(private animationHelper: AnimationService) {
       this.startTime();
   }
 
@@ -51,14 +52,41 @@ export class SkillSetComponent implements OnInit {
 
   async startTime(){
     await this.delay(200);
-    this.htmlValue = this.htmlValue + this.trueHTMLValue;
-    this.CSSValue = this.CSSValue + this.trueCSSValue;
-    this.JSValue = this.JSValue + this.trueJSValue;
-    this.AngularValue = this.AngularValue + this.trueAngularValue;
-    this.JavaValue = this.JavaValue + this.trueJavaValue;
-    this.CValue = this.CValue + this.trueCValue;
-    this.NodeValue = this.NodeValue + this.trueNodeValue;
-    this.SQLValue = this.SQLValue + this.trueSQLValue;
-    this.FirebaseValue = this.FirebaseValue + this.trueFirebaseValue;
+    this.animationHelper.countTime(this.trueHTMLValue,2, 35).subscribe((newWordArray) => {
+      this.htmlValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueCSSValue,2, 34).subscribe((newWordArray) => {
+      this.CSSValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueJSValue,2, 33).subscribe((newWordArray) => {
+      this.JSValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueAngularValue,2, 32).subscribe((newWordArray) => {
+      this.AngularValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueJavaValue,2, 31).subscribe((newWordArray) => {
+      this.JavaValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueCValue,2, 30).subscribe((newWordArray) => {
+      this.CValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueNodeValue,2, 29).subscribe((newWordArray) => {
+      this.NodeValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueSQLValue,2, 28).subscribe((newWordArray) => {
+      this.SQLValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.trueFirebaseValue,2, 27).subscribe((newWordArray) => {
+      this.FirebaseValue = newWordArray;
+    });
+    //this.htmlValue = this.htmlValue + this.trueHTMLValue;
+    //this.CSSValue = this.CSSValue + this.trueCSSValue;
+    //this.JSValue = this.JSValue + this.trueJSValue;
+    //this.AngularValue = this.AngularValue + this.trueAngularValue;
+    //this.JavaValue = this.JavaValue + this.trueJavaValue;
+    //this.CValue = this.CValue + this.trueCValue;
+    //this.NodeValue = this.NodeValue + this.trueNodeValue;
+    //this.SQLValue = this.SQLValue + this.trueSQLValue;
+    //this.FirebaseValue = this.FirebaseValue + this.trueFirebaseValue;
   }
 }
