@@ -27,6 +27,9 @@ export class SkillSetComponent implements OnInit {
   CValue = 0;
   trueCValue = 80;
 
+  PythonValue = 0;
+  truePythonValue = 80;
+
   NodeValue = 0;
   trueNodeValue = 85;
 
@@ -34,7 +37,7 @@ export class SkillSetComponent implements OnInit {
   trueSQLValue = 90;
 
   FirebaseValue = 0;
-  trueFirebaseValue = 90 ;
+  trueFirebaseValue = 90;
 
   curSec = 0;
 
@@ -69,6 +72,9 @@ export class SkillSetComponent implements OnInit {
     });
     this.animationHelper.countTime(this.trueCValue,2, 30).subscribe((newWordArray) => {
       this.CValue = newWordArray;
+    });
+    this.animationHelper.countTime(this.truePythonValue,2, 27).subscribe((newWordArray) => {
+      this.PythonValue = newWordArray;
     });
     this.animationHelper.countTime(this.trueNodeValue,2, 29).subscribe((newWordArray) => {
       this.NodeValue = newWordArray;
