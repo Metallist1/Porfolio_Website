@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <div class="section-title">
+    CONTACT ME
+  </div>
+  <div class="flex-container">
+    <div class="contact-container">
+      <div class="signature-flex">
+        <div class="siganture-title">
+          Social Media
+        </div>
+        <div class="signature-container">
+          <a
+            href="https://www.facebook.com/nedas.surkus"
+            target="new"
+            title="Facebook"
+            class="icon-style facebook"
+            [ngClass]="{'facebook-icon-change-color': loading }"
+          >
+            <fa-icon [icon]="faFacebook" [size]="size"></fa-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/neda0147/"
+            target="new"
+            title="LinkedIn"
+            class="icon-style linkedIn"
+            [ngClass]="{'linkedIn-icon-change-color': loading }"
+          >
+            <fa-icon [icon]="faLinkedin" [size]="size"></fa-icon>
+          </a>
+          <a
+            href="https://github.com/Metallist1"
+            target="new"
+            title="Github"
+            class="icon-style github"
+            [ngClass]="{'github-icon-change-color': loading }"
+          >
+            <fa-icon [icon]="faGithub" [size]="size"></fa-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<nav id="navbar-id" class="navbar">
+  <ul class="navbar-nav">
+    <li class="logo">
+      <a
+        class="nav-link">
+        <span class="link-text logo-text">Portfolio</span>
+        <fa-icon [icon]="faAngleDoubleRight" [size]="size"></fa-icon>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/']"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        class="nav-link">
+        <fa-icon class="fa-user" [icon]="faHome" [size]="size"></fa-icon>
+        <span class="link-text">INTRODUCTION</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/about']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon class="fa-user" [icon]="faUser" [size]="size"></fa-icon>
+        <span class="link-text">ABILITIES</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/work']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faBriefcase" [size]="size" ></fa-icon>
+        <span class="link-text">EXPERIENCE</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/examples']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faDesktop" [size]="size"></fa-icon>
+        <span class="link-text">EXAMPLES</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        [routerLink]="['/contact']"
+        [routerLinkActive]="['active']"
+        class="nav-link">
+        <fa-icon [icon]="faEnvelope" [size]="size"></fa-icon>
+        <span class="link-text">CONTACT</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>

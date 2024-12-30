@@ -1,0 +1,20 @@
+nav{
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  z-index: 100;
+}
+
+.nav-link.active {
+  color: #2963D3 !important
+}
+
+.navbar{
+  padding: 0 !important;
+  display: block !important;
+}
+
+@media only screen and (max-height: 550px) {
+  nav{
+    overflow-y: visible; /* UnHide vertical scrollbar */
+  }
+}
