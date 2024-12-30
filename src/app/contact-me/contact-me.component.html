@@ -5,10 +5,17 @@
   <div class="flex-container">
     <div class="contact-container">
       <div class="signature-flex">
-        <div class="siganture-title">
-          Social Media
-        </div>
+        <div class="signature-content">Feel free to send me a message.</div>
         <div class="signature-container">
+          <a
+            href="mailto:nedassurkus@gmail.com"
+            target="new"
+            title="EMail"
+            class="icon-style github"
+            [ngClass]="{'github-icon-change-color': loading }"
+          >
+            <fa-icon [icon]="faEnvelope" [size]="size"></fa-icon>
+          </a>
           <a
             href="https://www.facebook.com/nedas.surkus"
             target="new"

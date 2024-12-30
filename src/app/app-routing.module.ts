@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactMeComponent,
   },
+  {
+    path: '**',
+    redirectTo: ''
+  },
 ];
 
 @NgModule({

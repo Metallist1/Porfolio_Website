@@ -1,19 +1,19 @@
 <div class="team-skills">
   <div class="team-skill-container">
-    <div class="team-skill-header">Reliability</div>
-    <div class="team-skill-content">I am a highly reliable person that takes deadlines seriously</div>
+    <div class="team-skill-header">Positive</div>
+    <div class="team-skill-content">I always bring a smile to every meeting.</div>
   </div>
   <div class="team-skill-container">
-    <div class="team-skill-header">Communication</div>
-    <div class="team-skill-content">I try to explain problems in the easiest way possible</div>
+    <div class="team-skill-header">Flexible</div>
+    <div class="team-skill-content">I adapt quickly to any language and business requirement.</div>
   </div>
   <div class="team-skill-container">
-    <div class="team-skill-header">Positivity</div>
-    <div class="team-skill-content">I always try to bring a smile in every meeting.</div>
+    <div class="team-skill-header">Organised</div>
+    <div class="team-skill-content">I am capable of handling a lot of tasks and delivering them in a timely manner.</div>
   </div>
   <div class="team-skill-container">
-    <div class="team-skill-header">Problem solving</div>
-    <div class="team-skill-content">Every problem can be solved with enough time.</div>
+    <div class="team-skill-header">Adaptable</div>
+    <div class="team-skill-content">I am comfortable working by myself or in a team, remote or on-site.</div>
   </div>
 </div>
 
@@ -22,44 +22,202 @@
   <div class="skills">
     <div class="team-skill-header skills-header">Confidence in the language</div>
     <div class="main-skill-container">
-      <div class="main-skill-header">HTML</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="htmlValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">CSS</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="CSSValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">JS</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="JSValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">Angular</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="AngularValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">Java</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="JavaValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">C#</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="CValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">Python</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'" [value]="CValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
-      <div class="main-skill-header">NodeJS</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="NodeValue"></ngb-progressbar></div>
-    </div>
-    <div class="main-skill-container">
       <div class="main-skill-header">SQL</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'"  [value]="SQLValue"></ngb-progressbar></div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="SQLValue"
+            [attr.aria-valuenow]="SQLValue"
+            [style.transition]="SQLTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ SQLValue }}%
+          </div>
+        </div>
+      </div>
     </div>
     <div class="main-skill-container">
       <div class="main-skill-header">Firebase</div>
-      <div class="main-skill-content"><ngb-progressbar [showValue]="true" type="info" [height]="'20px'" [value]="FirebaseValue"></ngb-progressbar></div>
+      <div class="main-skill-content">
+        <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          height="'20px'"
+          [style.width.%]="FirebaseValue"
+          [attr.aria-valuenow]="FirebaseValue"
+          [style.transition]="FirebaseTransitionBar"
+          aria-valuemin="0"
+          aria-valuemax="100">
+          {{ FirebaseValue }}%
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">NodeJS</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="NodeValue"
+            [attr.aria-valuenow]="NodeValue"
+            [style.transition]="NodeTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ NodeValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">JavaScript</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="JSValue"
+            [attr.aria-valuenow]="JSValue"
+            [style.transition]="JStransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ JSValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">TypeScript</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="JSValue"
+            [attr.aria-valuenow]="JSValue"
+            [style.transition]="JStransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ JSValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">Python</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="PythonValue"
+            [attr.aria-valuenow]="PythonValue"
+            [style.transition]="PythonTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ PythonValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">Angular</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="AngularValue"
+            [attr.aria-valuenow]="AngularValue"
+            [style.transition]="AngularTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ AngularValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">HTML</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="htmlValue"
+            [attr.aria-valuenow]="htmlValue"
+            [style.transition]="htmltransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ htmlValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">CSS</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="CSSValue"
+            [attr.aria-valuenow]="CSSValue"
+            [style.transition]="CSStransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ CSSValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">C#</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="CValue"
+            [attr.aria-valuenow]="CValue"
+            [style.transition]="CTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ CValue }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-skill-container">
+      <div class="main-skill-header">Java</div>
+      <div class="main-skill-content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            height="'20px'"
+            [style.width.%]="JavaValue"
+            [attr.aria-valuenow]="JavaValue"
+            [style.transition]="JavaTransitionBar"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            {{ JavaValue }}%
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -67,12 +225,10 @@
 <div class="tools">
   <div class="tool-container">
     <div class="tool-header">Tools:</div>
-    <div class="tool-content">Kubernetes</div>
+    <div class="tool-content">LLM's</div>
     <div class="tool-content">Docker</div>
     <div class="tool-content">Apache</div>
     <div class="tool-content">Android studio</div>
-    <div class="tool-content">Webstorm</div>
-    <div class="tool-content">Visual studio code</div>
   </div>
   <div class="tool-container">
     <div class="tool-header">Methodologies:</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faFacebookSquare, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
@@ -14,6 +15,7 @@ export class ContactMeComponent {
   faFacebook = faFacebookSquare;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+  faEnvelope = faEnvelope;
 
   size:SizeProp = '3x' ;
 }
