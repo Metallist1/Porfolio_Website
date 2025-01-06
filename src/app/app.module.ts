@@ -14,6 +14,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EducationComponent } from './about-me/education/education.component';
 import { SkillSetComponent } from './about-me/skill-set/skill-set.component';
 import { NgxParticlesModule } from '@tsparticles/angular';
+import {AngularFireModule} from '@angular/fire/compat';
+import {AngularFireAnalyticsModule} from '@angular/fire/compat/analytics';
+import {environment} from '../enviroments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { NgxParticlesModule } from '@tsparticles/angular';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    NgxParticlesModule
+    NgxParticlesModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,22 +10,27 @@ const routes: Routes = [
   {
     path: '',
     component: IntroPageComponent,
+    title: 'Nedas Introduction'
   },
   {
     path: 'about',
     component: AboutMeComponent,
+    title: 'About Me'
   },
   {
     path: 'work',
     component: WorkExperienceComponent,
+    title: 'Work Experience'
   },
   {
     path: 'examples',
     component: WorkExamplesComponent,
+    title: 'Work Examples'
   },
   {
     path: 'contact',
     component: ContactMeComponent,
+    title: 'Contact Me'
   },
   {
     path: '**',
